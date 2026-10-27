@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>大肥鱼</title>
+<link rel="stylesheet" href="whale.css">
+</head>
+<body data-mood="calm">
+  <canvas id="stage"></canvas>
+  <div class="vignette"></div>
+
+  <header class="topbar">
+    <div class="who">
+      <span class="dot"></span>
+      <div class="who-text">
+        <b id="whoName">大肥鱼</b>
+        <i>贪吃的蓝色鲸鱼娘</i>
+      </div>
+    </div>
+    <div class="mood-chip">
+      <span id="moodEmoji">🫧</span><span id="moodLabel">平静</span>
+      <span id="moodInt" class="hidden"></span>
+    </div>
+    <div class="tools">
+      <button id="btnVoice" class="tool" title="语音播报开关">🔈</button>
+      <button id="btnMic" class="tool" title="语音输入">🎙️</button>
+      <button id="btnPanel" class="tool" title="情绪面板">📊</button>
+      <button id="btnUsage" class="tool on" title="Token 用量 / 花费">🪙</button>
+      <button id="btnSticker" class="tool" title="表情包">🎨</button>
+      <button id="btnDsh" class="tool" title="偷看你在 DSH 里干活">🖥️</button>
+    </div>
+  </header>
+
+  <aside id="usage" class="usage on" aria-live="polite">
+    <div class="u-head">
+      <b>Token 用量</b>
+      <span id="uModel" class="u-model">—</span>
+    </div>
+    <div class="u-big">
+      <span id="uCost" class="u-cost">¥0.0000</span>
+      <i>本轮花费</i>
+    </div>
+    <div class="u-grid">
+      <div><span>输入</span><b id="uIn">—</b></div>
+      <div><span>输出</span><b id="uOut">—</b></div>
+      <div><span>命中缓存</span><b id="uHit">—</b></div>
+      <div><span>合计</span><b id="uTot">—</b></div>
+    </div>
+    <div id="uState" class="u-state">还没说话</div>
+    <div class="u-sep"></div>
+    <div class="u-sum">
+      <div><span>本次会话</span><b id="uCalls">0 次</b></div>
+      <div><span>累计 token</span><b id="uSessTok">0</b></div>
+      <div><span>累计花费</span><b id="uSessCost">¥0.0000</b></div>
+    </div>
+    <div class="u-foot">
+      <span id="uPrice">单价可在 config.js 改</span>
+      <button id="uReset" type="button" title="把累计清零">清零</button>
+    </div>
+  </aside>
+
+  <div id="log" class="log" aria-live="polite"></div>
+  <div id="bubble" class="bubble"></div>
+  <div id="stickerPop" class="sticker-pop" aria-hidden="true"></div>
+
+  <aside id="stickerPanel" class="sticker-panel">
+    <div class="panel-head">
+      <b>表情包</b>
+      <button id="btnStickerClose" class="tool" title="关闭">✕</button>
+    </div>
+    <div id="stickerHint" class="sticker-hint">点一张让她发出来</div>
+    <div id="stickerGrid" class="sticker-grid"></div>
+  </aside>
+
+  <div class="dock">
+    <div class="quick">
+      <button id="btnMomo" class="quick-btn" title="摸摸头">🤚 摸摸</button>
+      <button id="btnFeed" class="quick-btn" title="喂一条 token">🐟 喂鱼</button>
+      <button id="btnSleep" class="quick-btn" title="让她睡/叫醒">🌙</button>
+    </div>
+    <form id="composer" class="composer" autocomplete="off">
+      <input id="input" type="text" placeholder="跟大肥鱼说点什么……" maxlength="200">
+      <button type="submit" class="send" title="发送">↵</button>
+    </form>
+  </div>
+
+  <aside id="panel" class="panel">
+    <div class="panel-head">
+      <b>情绪面板</b>
+      <button id="btnClose" class="tool" title="关闭">✕</button>
+    </div>
+    <div class="p-mood">
+      <div id="pMood" class="p-mood-name">🫧 平静</div>
+      <div id="pCause" class="p-cause">情绪平稳</div>
+    </div>
+    <div class="p-row"><span>强度</span><div class="bar"><i id="pInt"></i></div><b id="pIntVal">1.0</b></div>
+    <div class="p-row"><span>好感度</span><div class="bar aff"><i id="pAff"></i></div><b id="pAffVal">50</b></div>
+    <div class="p-row"><span>效价</span><b id="pVal">+0.00</b><span>唤醒</span><b id="pAro">0.00</b></div>
+    <div class="p-compass">
+      <div class="p-sub">情绪罗盘</div>
+      <canvas id="compass"></canvas>
+      <div class="p-hint">点越靠上越激动，越靠右越愉快</div>
+    </div>
+    <div class="p-timeline">
+      <div class="p-sub">最近情绪</div>
+      <div id="timeline"></div>
+    </div>
+  </aside>
+
+  <script src="config.js"></script>
+  <script src="js/moods.js"></script>
+  <script src="js/whale-usage.js"></script>
+  <script src="js/whale-memory.js"></script>
+  <script src="js/whale-stickers.js"></script>
+  <script src="js/whale-render.js"></script>
+  <script src="js/whale-talk.js"></script>
+  <script src="js/whale-dsh.js"></script>
+  <script src="js/whale-app.js"></script>
+</body>
+</html>

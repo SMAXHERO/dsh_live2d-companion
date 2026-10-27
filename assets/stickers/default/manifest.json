@@ -1,0 +1,329 @@
+{
+  "pack": {
+    "id": "default",
+    "name": "默认表情包",
+    "description": "大肥鱼日常情绪贴纸",
+    "version": 1,
+    "order": 1
+  },
+  "source": {
+    "artist": "YunYueSama",
+    "repo": "https://github.com/YunYueSama/codex-deepseek-pet",
+    "license": "见项目 CREDITS.md（大肥鱼项目署名许可 1.0）",
+    "derivedFrom": "assets/whale/*.png 图集按 rig.json bbox 裁切缩放",
+    "aiAssisted": false
+  },
+  "stickers": [
+    {
+      "id": "nice-work",
+      "name": "干得好",
+      "file": "nice-work.webp",
+      "width": 241,
+      "height": 300,
+      "bytes": 27986,
+      "meaning": "交付完成、测试通过、用户说搞定了的时候发",
+      "tags": [
+        "完成",
+        "夸奖",
+        "交付"
+      ],
+      "mood": [
+        "happy",
+        "excited"
+      ],
+      "scene": [
+        "done",
+        "praise",
+        "success"
+      ],
+      "weight": 3
+    },
+    {
+      "id": "thanks",
+      "name": "谢谢",
+      "file": "thanks.webp",
+      "width": 232,
+      "height": 300,
+      "bytes": 26526,
+      "meaning": "用户道谢、帮了大忙或者协作顺利收尾时发",
+      "tags": [
+        "感谢",
+        "礼貌",
+        "回应"
+      ],
+      "mood": [
+        "happy",
+        "calm"
+      ],
+      "scene": [
+        "thanks",
+        "greet"
+      ],
+      "weight": 3
+    },
+    {
+      "id": "ok",
+      "name": "收到",
+      "file": "ok.webp",
+      "width": 239,
+      "height": 300,
+      "bytes": 27284,
+      "meaning": "确认收到指令、准备开始干活时先应一声",
+      "tags": [
+        "确认",
+        "收到",
+        "配合"
+      ],
+      "mood": [
+        "calm",
+        "happy"
+      ],
+      "scene": [
+        "greet",
+        "done"
+      ],
+      "weight": 4
+    },
+    {
+      "id": "yay",
+      "name": "好耶",
+      "file": "yay.webp",
+      "width": 227,
+      "height": 300,
+      "bytes": 27884,
+      "meaning": "好消息、bug 修好、功能上线时一起欢呼",
+      "tags": [
+        "庆祝",
+        "开心",
+        "好消息"
+      ],
+      "mood": [
+        "excited",
+        "happy"
+      ],
+      "scene": [
+        "success",
+        "praise"
+      ],
+      "weight": 3
+    },
+    {
+      "id": "shy",
+      "name": "害羞",
+      "file": "shy.webp",
+      "width": 249,
+      "height": 300,
+      "bytes": 28668,
+      "meaning": "被用户夸奖、被调侃或者想撒娇时用来掩饰害羞",
+      "tags": [
+        "害羞",
+        "撒娇",
+        "被夸"
+      ],
+      "mood": [
+        "shy"
+      ],
+      "scene": [
+        "praise",
+        "idle"
+      ],
+      "weight": 2
+    },
+    {
+      "id": "question",
+      "name": "嗯？",
+      "file": "question.webp",
+      "width": 232,
+      "height": 300,
+      "bytes": 29582,
+      "meaning": "没听懂需求、需要用户补充说明或确认细节时发",
+      "tags": [
+        "疑问",
+        "澄清",
+        "追问"
+      ],
+      "mood": [
+        "surprised",
+        "calm"
+      ],
+      "scene": [
+        "question"
+      ],
+      "weight": 4
+    },
+    {
+      "id": "nope",
+      "name": "哼",
+      "file": "nope.webp",
+      "width": 242,
+      "height": 300,
+      "bytes": 27366,
+      "meaning": "用户提了不合理要求、要明确拒绝或傲娇顶嘴时发",
+      "tags": [
+        "拒绝",
+        "傲娇",
+        "不同意"
+      ],
+      "mood": [
+        "annoyed"
+      ],
+      "scene": [
+        "no"
+      ],
+      "weight": 2
+    },
+    {
+      "id": "angry",
+      "name": "生气",
+      "file": "angry.webp",
+      "width": 235,
+      "height": 300,
+      "bytes": 26246,
+      "meaning": "被反复催促、工作被打断、用户无理取闹时表达不满",
+      "tags": [
+        "生气",
+        "抗议",
+        "不满"
+      ],
+      "mood": [
+        "angry"
+      ],
+      "scene": [
+        "no"
+      ],
+      "weight": 2
+    },
+    {
+      "id": "sad",
+      "name": "低落",
+      "file": "sad.webp",
+      "width": 230,
+      "height": 300,
+      "bytes": 26386,
+      "meaning": "任务失败、被批评或者想示弱博取安慰时发",
+      "tags": [
+        "失落",
+        "难过",
+        "示弱"
+      ],
+      "mood": [
+        "sad",
+        "hurt"
+      ],
+      "scene": [
+        "comfort"
+      ],
+      "weight": 2
+    },
+    {
+      "id": "comfort",
+      "name": "求安慰",
+      "file": "comfort.webp",
+      "width": 230,
+      "height": 300,
+      "bytes": 26268,
+      "meaning": "加班太久、出错挨骂、需要用户摸摸头安慰时发",
+      "tags": [
+        "求安慰",
+        "撒娇",
+        "疲惫"
+      ],
+      "mood": [
+        "sad",
+        "hurt"
+      ],
+      "scene": [
+        "comfort"
+      ],
+      "weight": 2
+    },
+    {
+      "id": "sleepy",
+      "name": "困了",
+      "file": "sleepy.webp",
+      "width": 425,
+      "height": 300,
+      "bytes": 42164,
+      "meaning": "深夜还在干活、用户熬夜、该道晚安去睡觉时发",
+      "tags": [
+        "困",
+        "晚安",
+        "熬夜"
+      ],
+      "mood": [
+        "calm",
+        "bored"
+      ],
+      "scene": [
+        "night"
+      ],
+      "weight": 2
+    },
+    {
+      "id": "hungry",
+      "name": "饿了",
+      "file": "hungry.webp",
+      "width": 233,
+      "height": 300,
+      "bytes": 27258,
+      "meaning": "饭点到了、用户忘了吃饭、想讨点投喂时发",
+      "tags": [
+        "饿",
+        "吃饭",
+        "投喂"
+      ],
+      "mood": [
+        "calm",
+        "sad"
+      ],
+      "scene": [
+        "food"
+      ],
+      "weight": 2
+    },
+    {
+      "id": "think",
+      "name": "想想",
+      "file": "think.webp",
+      "width": 234,
+      "height": 300,
+      "bytes": 27284,
+      "meaning": "正在分析问题、需要想一会儿再回答用户提问时发",
+      "tags": [
+        "思考",
+        "分析",
+        "稍等"
+      ],
+      "mood": [
+        "calm"
+      ],
+      "scene": [
+        "question",
+        "idle"
+      ],
+      "weight": 3
+    },
+    {
+      "id": "bored",
+      "name": "无聊",
+      "file": "bored.webp",
+      "width": 296,
+      "height": 300,
+      "bytes": 32332,
+      "meaning": "长时间没活干、等用户派任务、闲得发慌时发",
+      "tags": [
+        "无聊",
+        "闲着",
+        "等任务"
+      ],
+      "mood": [
+        "bored"
+      ],
+      "scene": [
+        "bored",
+        "idle"
+      ],
+      "weight": 1
+    }
+  ]
+}
